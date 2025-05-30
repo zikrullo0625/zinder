@@ -4,7 +4,7 @@ Zinder is a modern dating platform inspired by Tinder, built with Laravel (backe
 It includes real-time chat, match notifications, user authentication, and an elegant UI with Tailwind CSS.
 
 ![Zinder Screenshot 1](https://github.com/zikrullo0625/zinder/blob/main/127.0.0.1_8000_(Samsung%20Galaxy%20S8%2B).png)
-![Zinder Screenshot 2](127.0.0.1_8000_(Samsung Galaxy S8+).png)
+![Zinder Screenshot 2](https://github.com/zikrullo0625/zinder/blob/main/127.0.0.1_8000_(Samsung%20Galaxy%20S8%2B).png)
 
 ## Features
 
