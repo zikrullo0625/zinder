@@ -101,8 +101,21 @@ class UserController extends Controller
             ->where('user_id', '!=', $user->id)
             ->pluck('user_id');
 
+        $requestedUsers = DB::table('requests')
+            ->where('user_id', $user->id)
+            ->pluck('recipient_id');
+
+        $receivedRequestsFrom = DB::table('requests')
+            ->where('recipient_id', $user->id)
+            ->pluck('user_id');
+
+        $excludedUserIds = $chatUsers
+            ->merge($requestedUsers)
+            ->merge($receivedRequestsFrom)
+            ->unique();
+
         $users = User::where('gender', '!=', $user->gender)
-            ->whereNotIn('id', $chatUsers)
+            ->whereNotIn('id', $excludedUserIds)
             ->get();
 
         return response()->json($users, 200);

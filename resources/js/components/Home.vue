@@ -65,7 +65,7 @@
         <div v-if="endOfCards" class="flex flex-col justify-center items-center h-[60%] text-center px-4">
             <i class="fa-regular fa-face-sad-tear text-6xl text-gray-500 mb-4"></i>
             <p class="text-3xl text-gray-300 font-semibold mb-2">Карточки закончились</p>
-            <p class="text-lg text-gray-400">Попробуй зайти позже или обнови список анкет.</p>
+            <p class="text-lg text-gray-400">Попробуй зайти позже или обнови страницу.</p>
         </div>
 
         <!-- Кнопки с иконками, расположенные снаружи -->
